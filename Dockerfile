@@ -2,12 +2,12 @@ FROM node:18-alpine
 
 WORKDIR /usr/src/app
 
-COPY package*.json ./
+COPY app/package*.json ./
 
-RUN npm install
-
-COPY app/src ./src
+RUN npm i -g @nestjs/cli && npm i
+ 
+COPY app/* .
 
 EXPOSE 3000
 
-CMD ["npm", "start"]
+# ENTRYPOINT [ "tail", "-f", "/dev/null" ] 

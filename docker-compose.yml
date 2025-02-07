@@ -1,8 +1,9 @@
 services:
   app:
     build: .
+    command: nest start
     ports:
       - "3000:3000"
     volumes:
-      - ./app/src:/usr/src/app/src 
-    command: npm start
+      - ./app:/usr/src/app
+        
