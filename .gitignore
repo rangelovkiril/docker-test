@@ -1,0 +1,37 @@
+# Игнорирование зависимостей Node.js
+node_modules/
+npm-debug.log*
+yarn-error.log
+
+# Игнорирование артефактов сборки NestJS
+dist/
+*.tsbuildinfo
+
+# Игнорирование окружения
+.env
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+
+# Логи и временные файлы
+logs/
+*.log
+*.out
+*.pid
+*.seed
+*.sqlite
+
+# Docker-файлы и контейнерные данные
+docker-compose.override.yml
+.dockerignore
+docker-entrypoint.sh
+/tmp/
+*.sock
+
+# IDE и системные файлы
+.vscode/
+.idea/
+*.swp
+.DS_Store
+Thumbs.db

@@ -1,7 +1,8 @@
 services:
   app:
     build: .
-    command: nest start
+    user: "node"
+    command: npm run start:dev
     ports:
       - "3000:3000"
     volumes:
